@@ -23,14 +23,14 @@ body {
   font-size: 3rem;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* TOP SECTION LAYOUT */
 .top-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: start;
+  align-items: center;
   gap: 20px;
 }
 
@@ -57,14 +57,14 @@ body {
 
 /* TEXT BLOCK */
 .text-block {
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 1.3rem;
   line-height: 1.6;
 }
 
 /* IMAGE ROW */
 .image-row {
-  margin-top: 30px;
+  margin-top: 35px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -89,7 +89,7 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 1.4rem;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 /* RESPONSIVE */
