@@ -1,85 +1,89 @@
-/* PAGE GRID — required layout */
+/* PAGE GRID */
 body {
   display: grid;
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
   background-color: #6fa8dc;
   margin: 0;
   padding: 20px;
-  font-family: Georgia, "Times New Roman", serif; /* MATCH FLYER FONT */
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 /* WHITE CENTER PANEL */
 .content-panel {
   grid-column: 2 / 8;
   background-color: white;
-  padding: 35px;
+  padding: 40px;
   border-radius: 14px;
   box-sizing: border-box;
 }
 
-/* HEADER */
-.header-title {
-  text-align: center;
-  font-size: 3.2rem; /* slightly larger to match flyer */
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 4px solid black;
+/* TITLE UNDERLINE ONLY UNDER TEXT */
+.title-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-/* TOP SECTION LAYOUT */
+.header-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin: 0 0 25px 0;
+  padding-bottom: 6px;
+  border-bottom: 4px solid black;
+  display: inline-block;
+}
+
+/* TOP SECTION */
 .top-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 10px; /* tighter like flyer */
+  gap: 20px;
   margin-bottom: 10px;
 }
 
-/* HERO IMAGE — circular and smaller */
+/* HERO IMAGE */
 .hero-image img {
-  width: 65%; /* slightly smaller */
+  width: 65%;
   display: block;
   margin: 0 auto;
   border-radius: 50%;
   border: 6px solid black;
 }
 
-/* NAV LIST — ordered */
+/* NAV LIST — LARGER */
 .nav-list ol {
-  padding-left: 25px;
+  padding-left: 35px;
   margin: 0;
-  font-size: 1.45rem; /* slightly larger */
+  font-size: 1.8rem;
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
 
 /* TEXT BLOCK */
 .text-block {
-  margin-top: 15px; /* tighter */
-  font-size: 1.35rem;
+  margin-top: 20px;
+  font-size: 1.4rem;
   line-height: 1.6;
 }
 
 /* BLUE BACKGROUND BEHIND IMAGES */
 .image-row-wrapper {
   background-color: #6fa8dc;
-  padding: 25px;
+  padding: 30px;
   border-radius: 14px;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
-/* IMAGE ROW */
+/* IMAGE GRID */
 .image-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
-/* ROUNDED BOX IMAGES */
+/* IMAGE BOXES */
 .img-box {
   background-color: white;
   padding: 12px;
@@ -93,18 +97,16 @@ body {
   border-radius: 10px;
 }
 
-/* FOOTER */
+/* FOOTER LOGO — LARGER */
 .footer {
   text-align: center;
-  font-weight: bold;
-  font-size: 1.4rem;
   margin-top: 40px;
 }
 
 .db-logo {
-  width: 80px;
+  width: 150px;
   display: block;
-  margin: 0 auto 10px auto;
+  margin: 0 auto;
 }
 
 /* RESPONSIVE */
