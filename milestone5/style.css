@@ -51,22 +51,32 @@ body {
 }
 
 /* NAV LIST — LARGER */
-.nav-list ol {
-  padding-left: 35px;
+.nav-list {
+  display: flex;
+  justify-content: center;   /* NEW */
+}
+
+.nav-list ul {
+  padding-left: 0;
   margin: 0;
   font-size: 1.8rem;
   font-weight: bold;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  text-align: center;        /* NEW */
+  list-style-position: inside; /* keeps numbers aligned when centered */
 }
+
 
 /* TEXT BLOCK */
 .text-block {
   margin-top: 20px;
   font-size: 1.4rem;
   line-height: 1.6;
+  text-align: center;        /* NEW */
 }
+
 
 /* BLUE BACKGROUND BEHIND IMAGES */
 .image-row-wrapper {
@@ -117,10 +127,25 @@ body {
   }
 
   .hero-image img {
-    width: 50%;
+    width: 65%;
+    display: block;
+    margin-left: auto;         /* NEW */
+    margin-right: auto;        /* NEW */
+    border-radius: 50%;
+    border: 6px solid black;
   }
+
 
   .image-row {
     grid-template-columns: 1fr;
   }
+}
+
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  justify-content: center;   /* NEW: centers the whole 2‑column block */
 }
