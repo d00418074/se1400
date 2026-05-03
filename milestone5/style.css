@@ -2,17 +2,17 @@
 body {
   display: grid;
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-  background-color: #6fa8dc; /* dark blue sides */
+  background-color: #6fa8dc;
   margin: 0;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", serif; /* MATCH FLYER FONT */
 }
 
 /* WHITE CENTER PANEL */
 .content-panel {
   grid-column: 2 / 8;
   background-color: white;
-  padding: 30px;
+  padding: 35px;
   border-radius: 14px;
   box-sizing: border-box;
 }
@@ -20,10 +20,12 @@ body {
 /* HEADER */
 .header-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.2rem; /* slightly larger to match flyer */
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid black;
 }
 
 /* TOP SECTION LAYOUT */
@@ -31,40 +33,47 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 20px;
+  gap: 10px; /* tighter like flyer */
+  margin-bottom: 10px;
 }
 
 /* HERO IMAGE — circular and smaller */
 .hero-image img {
-  width: 70%;
+  width: 65%; /* slightly smaller */
   display: block;
   margin: 0 auto;
   border-radius: 50%;
   border: 6px solid black;
 }
 
-/* NAV LIST */
-.nav-list ul {
-  list-style: none;
-  padding: 0;
+/* NAV LIST — ordered */
+.nav-list ol {
+  padding-left: 25px;
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.45rem; /* slightly larger */
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 /* TEXT BLOCK */
 .text-block {
-  margin-top: 25px;
-  font-size: 1.3rem;
+  margin-top: 15px; /* tighter */
+  font-size: 1.35rem;
   line-height: 1.6;
+}
+
+/* BLUE BACKGROUND BEHIND IMAGES */
+.image-row-wrapper {
+  background-color: #6fa8dc;
+  padding: 25px;
+  border-radius: 14px;
+  margin-top: 30px;
 }
 
 /* IMAGE ROW */
 .image-row {
-  margin-top: 35px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -73,7 +82,7 @@ body {
 /* ROUNDED BOX IMAGES */
 .img-box {
   background-color: white;
-  padding: 10px;
+  padding: 12px;
   border-radius: 14px;
   border: 3px solid black;
 }
@@ -89,7 +98,13 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 1.4rem;
-  margin-top: 35px;
+  margin-top: 40px;
+}
+
+.db-logo {
+  width: 80px;
+  display: block;
+  margin: 0 auto 10px auto;
 }
 
 /* RESPONSIVE */
