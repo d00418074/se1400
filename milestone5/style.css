@@ -1,23 +1,28 @@
+/* PAGE GRID */
 body {
   display: grid;
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
   gap: 20px;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: #6fa8dc; /* matches mockup blue */
+  background-color: #6fa8dc; /* mockup blue */
+  margin: 0;
 }
 
-/* Header */
+/* HEADER */
 .header-title {
   grid-column: 2 / 8;
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
-/* Nav list */
+/* NAVIGATION */
 .nav-list {
   grid-column: 2 / 4;
+  align-self: start;
 }
 
 .nav-list ul {
@@ -26,11 +31,12 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
-/* Hero image */
+/* HERO IMAGE */
 .framed-image {
   grid-column: 4 / 8;
 }
@@ -38,16 +44,17 @@ body {
 .framed-image img {
   width: 100%;
   height: auto;
-  border: 4px solid black;
+  border: 6px solid black; /* matches mockup frame */
 }
 
-/* Text block */
+/* TEXT BLOCK */
 .text-block {
   grid-column: 2 / 8;
   font-size: 1.1rem;
+  line-height: 1.5;
 }
 
-/* Three images */
+/* THREE-IMAGE ROW */
 .image-row {
   grid-column: 2 / 8;
   display: grid;
@@ -58,12 +65,14 @@ body {
 .image-row img {
   width: 100%;
   height: auto;
+  border: 3px solid black; /* matches mockup style */
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
   grid-column: 2 / 8;
   text-align: center;
-  padding: 20px 0;
   font-weight: bold;
+  padding: 20px 0;
+  font-size: 1.2rem;
 }
