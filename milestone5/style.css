@@ -12,84 +12,95 @@ body {
 .content-panel {
   grid-column: 2 / 8;
   background-color: white;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 14px;
   box-sizing: border-box;
 }
 
 /* HEADER */
 .header-title {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
-/* NAVIGATION */
-.nav-list {
-  grid-column: 2 / 4;
+/* TOP SECTION LAYOUT */
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 20px;
 }
 
+/* HERO IMAGE — circular and smaller */
+.hero-image img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 6px solid black;
+}
+
+/* NAV LIST */
 .nav-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-/* HERO IMAGE */
-.framed-image {
-  grid-column: 4 / 8;
-}
-
-.framed-image img {
-  width: 100%;
-  height: auto;
-  border: 6px solid black;
+  gap: 12px;
 }
 
 /* TEXT BLOCK */
 .text-block {
-  grid-column: 2 / 8;
-  font-size: 1.1rem;
-  line-height: 1.5;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  line-height: 1.6;
 }
 
-/* THREE-IMAGE ROW */
+/* IMAGE ROW */
 .image-row {
-  grid-column: 2 / 8;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 25px;
 }
 
-.image-row img {
+/* ROUNDED BOX IMAGES */
+.img-box {
+  background-color: white;
+  padding: 10px;
+  border-radius: 14px;
+  border: 3px solid black;
+}
+
+.img-box img {
   width: 100%;
   height: auto;
-  border: 3px solid black;
+  border-radius: 10px;
 }
 
 /* FOOTER */
 .footer {
-  grid-column: 2 / 8;
   text-align: center;
   font-weight: bold;
-  padding: 20px 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  margin-top: 30px;
 }
 
-/* RESPONSIVE BEHAVIOR */
+/* RESPONSIVE */
 @media (max-width: 900px) {
-  .nav-list {
-    grid-column: 2 / 8;
-    margin-bottom: 20px;
+  .top-section {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .framed-image {
-    grid-column: 2 / 8;
+  .hero-image img {
+    width: 50%;
   }
 
   .image-row {
