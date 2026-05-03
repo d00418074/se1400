@@ -1,19 +1,23 @@
-.page-wrapper {
+body {
   display: grid;
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
   gap: 20px;
   padding: 20px;
   font-family: Arial, sans-serif;
+  background-color: #6fa8dc; /* matches mockup blue */
 }
 
+/* Header */
 .header-title {
   grid-column: 2 / 8;
   text-align: center;
   font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
+/* Nav list */
 .nav-list {
-  grid-column: 2 / 5;
+  grid-column: 2 / 4;
 }
 
 .nav-list ul {
@@ -23,37 +27,43 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  font-size: 1.2rem;
 }
 
+/* Hero image */
 .framed-image {
-  grid-column: 5 / 8;
+  grid-column: 4 / 8;
 }
 
 .framed-image img {
   width: 100%;
   height: auto;
+  border: 4px solid black;
 }
 
+/* Text block */
 .text-block {
   grid-column: 2 / 8;
+  font-size: 1.1rem;
 }
 
+/* Three images */
 .image-row {
   grid-column: 2 / 8;
   display: grid;
-  grid-template-columns: subgrid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .image-row img {
   width: 100%;
-  grid-column: span 2;
+  height: auto;
 }
 
+/* Footer */
 .footer {
   grid-column: 2 / 8;
   text-align: center;
   padding: 20px 0;
   font-weight: bold;
 }
-
