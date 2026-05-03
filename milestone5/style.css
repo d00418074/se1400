@@ -64,7 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  text-align: center;        /* NEW */
+  text-align: left;        /* NEW */
   list-style-position: inside; /* keeps numbers aligned when centered */
 }
 
