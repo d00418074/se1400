@@ -1,8 +1,8 @@
-/* PAGE GRID */
+/* PAGE GRID — required layout */
 body {
   display: grid;
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-  background-color: #6fa8dc;
+  background-color: #6fa8dc; /* dark blue sides */
   margin: 0;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -13,6 +13,7 @@ body {
   grid-column: 2 / 8;
   background-color: white;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 /* HEADER */
@@ -78,4 +79,20 @@ body {
   font-weight: bold;
   padding: 20px 0;
   font-size: 1.2rem;
+}
+
+/* RESPONSIVE BEHAVIOR */
+@media (max-width: 900px) {
+  .nav-list {
+    grid-column: 2 / 8;
+    margin-bottom: 20px;
+  }
+
+  .framed-image {
+    grid-column: 2 / 8;
+  }
+
+  .image-row {
+    grid-template-columns: 1fr;
+  }
 }
