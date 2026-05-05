@@ -89,9 +89,10 @@ body {
 }
 
 .images img {
-  width: 100%;
+  width: 30%;
+  max-width: 200px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .footer {
@@ -102,7 +103,15 @@ body {
 .db_logo {
   width: 100px;
   display: block;
-  margin: 0 auto;
+  margin: 30px auto 0 auto;
+}
+
+.subpage_image {
+  width: 60%;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
 }
 
 @media (max-width: 992px) {
