@@ -90,8 +90,8 @@ body {
 
 .images img {
   width: 30%;
-  max-width: 200px;
-  height: auto;
+  max-width: 300px;
+  margin: 10px;
   border-radius: 8px;
 }
 
