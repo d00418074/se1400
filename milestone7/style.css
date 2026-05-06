@@ -89,8 +89,8 @@ body {
 }
 
 .text_block .images img {
-  width: 32%;
-  max-width: 325px;
+  width: 30%;
+  max-width: 200px;
   margin: 10px;
   border-radius: 8px;
 }
