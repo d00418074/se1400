@@ -88,7 +88,7 @@ body {
   border: 3px solid black;
 }
 
-.images .content img {
+.text_block .images img {
   width: 32%;
   max-width: 325px;
   margin: 10px;
